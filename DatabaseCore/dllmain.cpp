@@ -19,7 +19,7 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     case DLL_PROCESS_ATTACH: {
         int offset = 0;
         GetSystemInfo(&sysinfo);
-        LPCWSTR fileName = L"D:\\3course\\5sem\\OSaSP\\TelephoneBook_large\\addresses.txt";
+        LPCWSTR fileName = L"..\\addresses.txt";
         LPCWSTR name = L"TelephoneBook";
         file = CreateFile(fileName, GENERIC_READ, 0, NULL, OPEN_EXISTING, 0, NULL);
         fileSize = GetFileSize(file, NULL);

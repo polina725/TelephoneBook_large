@@ -19,7 +19,7 @@
 
 #ifdef _WIN64 
 #define SEARCH_FUNCTION "?search@@YA?AV?$vector@PEAVRecord@@V?$allocator@PEAVRecord@@@std@@@std@@VRecord@@@Z"
-#define FORM_FUNCTION ""
+#define FORM_FUNCTION "?loadDB@@YA?AV?$vector@PEAVRecord@@V?$allocator@PEAVRecord@@@std@@@std@@XZ"
 #else
 #define SEARCH_FUNCTION "?search@@YA?AV?$vector@PAVRecord@@V?$allocator@PAVRecord@@@std@@@std@@VRecord@@@Z"
 #define FORM_FUNCTION "?loadDB@@YA?AV?$vector@PAVRecord@@V?$allocator@PAVRecord@@@std@@@std@@XZ"

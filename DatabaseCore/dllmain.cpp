@@ -53,7 +53,10 @@ string getLine()
             currentOffset = 0;
         }
     }
-    str[prevLength + i - 1] = '\0';
+    if (str[prevLength + i - 1] == '\r')
+        str[prevLength + i - 1] = '\0';
+    else
+        str[prevLength + i] = '\0';
     currentOffset = i + currentOffset + 1;
     return string(str);
 }
